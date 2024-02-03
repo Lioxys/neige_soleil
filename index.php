@@ -10,32 +10,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neige et Soleil</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="img/logo.png" height="75px" width="100px"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.php?page=2">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.php?page=3">Nos logements</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.php?page=4">S'inscrire</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.php?page=5">Se connecter </a>
-        </li>
-    </div>
-  </div>
-</nav>
+<header class ="header">
+<a href="#" class="logo">Neige et soleil </a>
+<nav class="navbar">
+<a href="index.php?page=2" >Acceuil</a>
+<a href="index.php?page=5" >Se  connecter</a>
+<a href="index.php?page=4" >S'inscrire</a>
+<a href="index.php?page=3" >Nos logement</a>
+<a href="#" >Contactez nous</a>
+</header>
 <center>
     <?php 
 
