@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+<script src="js/script.js"></script>
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="img/logo.png" height="75px" width="100px"></a>
@@ -46,6 +47,7 @@
     }
     switch($page){
         //case 1: require_once("home.php"); break;
+        case 3: require_once("gestion_logement.php"); break;
         case 4: require_once("gestion_client.php"); break;
         case 5: require_once("gestion_connexion.php"); break;
         case 6: session_destroy(); unset($_SESSION['email']);header("Location: index.php");break;

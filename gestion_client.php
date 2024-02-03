@@ -2,7 +2,7 @@
 
 <?php 
     require_once("modele/modele.class.php");
-    require_once("vue/vue_insert_client.php");
+    require_once("vue/vue_inscription_client.php");
     if (isset($_POST['Valider'])){
         //verification des données
         if ($unControleur->testVide($_POST)){
