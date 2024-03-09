@@ -7,10 +7,12 @@
         //verification des données
         if ($unControleur->testVide($_POST)){
             echo "<br> Veuillez remplir les champs.";
-        }else{
+        }else if ($_POST['role'] = "client"){
         //insertion de la nouvelle classe dans la BDD
             $unControleur->insertClient($_POST);
             echo '<br> Création de votre compte validée';
+        }else{
+            $unControleur->insertProprietaire($_POST);
         }
     }
 ?>

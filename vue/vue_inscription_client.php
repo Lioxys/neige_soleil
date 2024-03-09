@@ -14,53 +14,68 @@
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input type="text" id="nom_client" class="form-control" />
-                      <label class="form-label" for="nom_client">Your Name</label>
+                      <select name="role" id="role-select">
+                      <option value="">--Choisir son rôle--</option>
+                      <option value="client">Client</option>
+                      <option value="proprietaire">Proprietaire</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" name="nom" class="form-control" />
+                      <label class="form-label" for="nom">Nom</label>
                     </div>
                   </div>
 
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input type="email" id="prenom_client" class="form-control" />
-                      <label class="form-label" for="prenom_client">Your Email</label>
+                      <input type="text" name="prenom" class="form-control" />
+                      <label class="form-label" for="prenom">Prénom</label>
                     </div>
                   </div>
 
                   <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input type="password" id="mdp_client" class="form-control" />
-                      <label class="form-label" for="mdp_client">Password</label>
+                      <input type="text" name="adresse" class="form-control" />
+                      <label class="form-label" for="adresse">Adresse</label>
                     </div>
                   </div>
 
                   <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input type="password" id="mdp_client_repeat" class="form-control" />
-                      <label class="form-label" for="mdp_client_repeat">Repeat your password</label>
+                      <input type="text" name="cp" class="form-control" />
+                      <label class="form-label" for="cp">Code postal</label>
                     </div>
                   </div>
 
-                  <div class="form-check d-flex justify-content-center mb-5">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
-                    <label class="form-check-label" for="form2Example3">
-                      I agree all statements in <a href="#!">Terms of service</a>
-                    </label>
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" name="ville" class="form-control" />
+                      <label class="form-label" for="ville">Ville</label>
+                    </div>
                   </div>
-
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" name="telephone" class="form-control" />
+                      <label class="form-label" for="telephone">Telephone</label>
+                    </div>
+                  </div>
                   <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <button type="button" class="btn btn-primary btn-lg">Register</button>
+                    <input type="submit" name="Valider" value="Valider">
                   </div>
 
                 </form>
 
               </div>
               <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
-                  class="img-fluid" alt="Sample image">
 
               </div>
             </div>

@@ -10,10 +10,11 @@
         if ($unUser != null){
             $_SESSION['nom'] = $unUser['nom'];
             $_SESSION['prenom'] = $unUser['prenom'];
-            //var_dump($_SESSION); 
+            $_SESSION['role'] = $unUser['role'];
+            var_dump($_SESSION);
             //j'actualise la page
             echo"<br> Tu es connecté";
-           //header("Location: index.php?page=1");
+            header("Location: index.php?page=2");
         }else{
             echo "<br> Veuillez vérifier vos identifiants";
         }
