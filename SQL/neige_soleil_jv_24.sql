@@ -6,8 +6,7 @@
 -- Généré le : jeu. 25 jan. 2024 à 22:08
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
-drop database neige_soleil_jv_24 if exist;
-  CREATE database neige_soleil_jv_24;
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";

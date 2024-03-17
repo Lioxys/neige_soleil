@@ -1,46 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Ludiflex | Login</title>
+    <link href='css/style.css' rel='stylesheet'>
+
+    
 </head>
 <body>
-    <form method="post">
-    <div class="box">
-        <div class="container">
-            <div class="top-header">
-                <span>Have an account?</span>
-             
+    <div class="banner">
+    <div class="wrapper"> 
+        <form method="POST">
+            <h1>Bienvenue </h1>
+            <div class="input-box">
+                <i class='bx bx-user'></i>
+                <input type="text" name="nom" placeholder="Nom" required>
             </div>
-
-            <div class="input-field">
-                <input type="text" class="input" placeholder="Username" required>
-             
+            <div class="input-box">
+                <i class='bx bx-lock-alt'></i>
+                <input type="text" name=prenom placeholder="Mot de passe" required>
             </div>
-            <div class="input-field">
-                <input type="password" class="input" placeholder="Password" required>
-                <i class="bx bx-lock-alt"></i>
-            </div>
-            <div class="input-field">
-                <input type="submit" class="submit" name="connexion" value="connexion">
-            </div>
-
-            <div class="bottom">
-                <div class="left">
-                    <input type="checkbox"  id="check">
-                    <label for="check">Se souvenir de moi</label>
+            <label>
+                <div class="renember-forgot">
+                    <input type="checkbox"> Rester connecté &nbsp; <!-- Ajout d'un espace -->
+                    <a href="#">Mot de passe oublié ?</a>
                 </div>
-                <div class="right">
-                    <label><a href="#">Mot de passe oublié
-                    </a></label>
-                </div>
+            </label>
+            <button type="submit"  name="connexion" value="connexion" class="btn">Connexion</button>
+
+            <div class="register-link">
+                <p>Pas encore membre ? <a href="index.php?page=8">S'inscrire</a></p>
             </div>
-        </div>
+            </div>
+        </form>
     </div>
-    </form>
 </body>
 </html>
