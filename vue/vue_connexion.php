@@ -19,7 +19,8 @@
             </div>
             <label>
                 <div class="renember-forgot">
-                    <input type="checkbox"> Rester connecté &nbsp; <!-- Ajout d'un espace -->
+                    <input type="checkbox"> Rester connecté &nbsp; 
+                    
                     <a href="#">Mot de passe oublié ?</a>
                 </div>
             </label>

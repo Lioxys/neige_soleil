@@ -306,6 +306,7 @@ ALTER TABLE `habitation`
 --
 ALTER TABLE `maison`
   ADD PRIMARY KEY (`idhabitation`);
+  ADD KEY('codepostal');
 
 --
 -- Index pour la table `proprietaire`

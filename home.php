@@ -14,8 +14,12 @@ Libérez votre esprit en louant votre bien.</h1>
             <p>Explorer et S'amuser</p>
 
             <div>
-                <button type="button" href="index.php?page=9">S'inscrire <span></span></button>
+            <a href="index.php?page=8">
+                <button type="button" >S'inscrire <span></span></button>
+                </a>
+<a href="index.php?page=9">
                 <button type="button">Se connecter<span></span></button>
+                </a>
             </div>
         </div>
     </div>

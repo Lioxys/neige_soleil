@@ -55,6 +55,12 @@
             $select->execute($donnees);
             return $select->fetch();
         }
+        public function insertReservation($reservation) {
+            $requete = "INSERT INTO reservation (prix,  iduser, idhabitation) VALUES (:prix,  :iduser, :idhabitation)";
+            $select = $this->unPDO->prepare($requete);
+            $select->execute($reservation);
+        }
+        
     }
 
 ?>

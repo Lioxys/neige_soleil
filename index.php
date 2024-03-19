@@ -39,10 +39,13 @@
           <a class="nav-link" href="index.php?page=4">Vos réservations</a>
         </li>
         <li class="nav-item">
+        <a class="nav-link" href="index.php?page=4">Vos Contrat</a>
+      </li>
+        <li class="nav-item">
           <a class="nav-link" href="index.php?page=7">Me déconnecter</a>
         </li>
         <li>
-          <a class="nav-link" href="index.php?page=10">Mon compte</a>
+          <a class="nav-link" href="index.php?page=12">Mon compte</a>
         </li>
         </ul>
       </div>';
@@ -59,7 +62,7 @@
           <a class="nav-link" href="index.php?page=4">Vos réservations</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php?page=10">Mon compte</a>
+          <a class="nav-link" href="index.php?page=12">Mon compte</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.php?page=7">Me déconnecter</a>
@@ -102,6 +105,8 @@
         case 3: require_once("gestion_logement.php"); break;
         case 8: require_once("gestion_client.php"); break;
         case 9: require_once("gestion_connexion.php"); break;
+        case 11: require_once("Confirmation.php"); break;
+        case 12: require_once("profil.php"); break;
         case 7: session_destroy(); unset($_SESSION['role']);header("Location: index.php");break;
         default: require_once("home.php"); break;
     }
