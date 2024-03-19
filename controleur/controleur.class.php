@@ -24,14 +24,13 @@ public function reserverLogement($idhabitation, $iduser) {
 				$this->unModele->insertReservation($reservation);
 		
 				// Mettre à jour l'état du logement en 'reserve'
-				$this->unModele->updateEtatLogement($idhabitation, 'reserve');
+			
 		
 				// Redirection vers la page de confirmation ou autre
-				header("Location: index.php?page=11");
+				header("Location: confirmation.php");
 				exit; // Assurez-vous de terminer l'exécution du script après la redirection
 			} else {
-				// Logement déjà réservé, gestion de cette situation
-				// Par exemple, afficher un message d'erreur à l'utilisateur
+		
 				echo "Ce logement est déjà réservé.";
 			}
 		}

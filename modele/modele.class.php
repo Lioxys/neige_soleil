@@ -35,7 +35,7 @@
             return $select->fetchAll();
         }
         public function selectWhereLogement($idhabitation){
-            $requete="select * from classe where idhabitation=:idhabitation;";
+            $requete="select * from habitation where idhabitation=:idhabitation;";
             $select = $this->unPDO->prepare($requete);
             $donnees=array(":idhabitation"=>$idhabitation);
             $select->execute($donnees);
@@ -56,9 +56,12 @@
             return $select->fetch();
         }
         public function insertReservation($reservation) {
-            $requete = "INSERT INTO reservation (prix,  iduser, idhabitation) VALUES (:prix,  :iduser, :idhabitation)";
+            $requete = "INSERT INTO reservation (prix, nb_personne, iduser, idhabitation) VALUES (:prix, :nb_personne, :iduser, :idhabitation)";
+
             $select = $this->unPDO->prepare($requete);
             $select->execute($reservation);
+
+            
         }
         
     }
