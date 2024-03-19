@@ -28,6 +28,26 @@
             );
             $select->execute($donnees);
         }
+        public function selectAllLogements(){
+            $requete = "select * from habitation;";
+            $select = $this->unPDO->prepare($requete);
+            $select->execute();
+            return $select->fetchAll();
+        }
+        public function selectWhereLogement($idhabitation){
+            $requete="select * from classe where idhabitation=:idhabitation;";
+            $select = $this->unPDO->prepare($requete);
+            $donnees=array(":idhabitation"=>$idhabitation);
+            $select->execute($donnees);
+            return $select->fetch(); //un seul résultat
+        }
+        public function selectLikeLogements($filtre){
+            $requete = "select * from habitation where type like :filtre or etat like :filtre or idhabitation like :filtre;";
+            $select = $this->unPDO->prepare($requete);
+            $donnees=array(":filtre"=>"%".$filtre."%");
+            $select->execute($donnees);
+            return $select->fetchAll();
+        }
         public function verifConnexion($nom, $prenom){
             $requete="select * from user where nom=:nom and prenom=:prenom ;";
             $donnees=array(":nom"=>$nom, ":prenom"=>$prenom);
@@ -35,6 +55,12 @@
             $select->execute($donnees);
             return $select->fetch();
         }
+        public function insertReservation($reservation) {
+            $requete = "INSERT INTO reservation (prix,  iduser, idhabitation) VALUES (:prix,  :iduser, :idhabitation)";
+            $select = $this->unPDO->prepare($requete);
+            $select->execute($reservation);
+        }
+        
     }
 
 ?>
